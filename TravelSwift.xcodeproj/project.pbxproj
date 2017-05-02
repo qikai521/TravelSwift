@@ -14,6 +14,9 @@
 		3C5FBDA11EB868B700E5F76A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C5FBD9F1EB868B700E5F76A /* LaunchScreen.storyboard */; };
 		3C5FBDAC1EB868B800E5F76A /* TravelSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5FBDAB1EB868B800E5F76A /* TravelSwiftTests.swift */; };
 		3C5FBDB71EB868B900E5F76A /* TravelSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5FBDB61EB868B900E5F76A /* TravelSwiftUITests.swift */; };
+		3C5FBDCC1EB878E600E5F76A /* define.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5FBDCB1EB878E600E5F76A /* define.swift */; };
+		3C5FBDCF1EB87B2800E5F76A /* color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5FBDCE1EB87B2800E5F76A /* color.swift */; };
+		3C5FBDD11EB87EA500E5F76A /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5FBDD01EB87EA500E5F76A /* UserInfo.swift */; };
 		729860197BCFE55DDB49AC86 /* libPods-TravelSwift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 75EA5DCD4B76F0CB485F5B2D /* libPods-TravelSwift.a */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +51,9 @@
 		3C5FBDB21EB868B800E5F76A /* TravelSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C5FBDB61EB868B900E5F76A /* TravelSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelSwiftUITests.swift; sourceTree = "<group>"; };
 		3C5FBDB81EB868B900E5F76A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C5FBDCB1EB878E600E5F76A /* define.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = define.swift; sourceTree = "<group>"; };
+		3C5FBDCE1EB87B2800E5F76A /* color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = color.swift; sourceTree = "<group>"; };
+		3C5FBDD01EB87EA500E5F76A /* UserInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		65075653C0EBEE637CB2B1DE /* Pods-TravelSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TravelSwift/Pods-TravelSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		75EA5DCD4B76F0CB485F5B2D /* libPods-TravelSwift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TravelSwift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFB400CC22155DFFCF66ABD6 /* Pods-TravelSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-TravelSwift/Pods-TravelSwift.release.xcconfig"; sourceTree = "<group>"; };
@@ -114,6 +120,12 @@
 			children = (
 				3C5FBD961EB868B500E5F76A /* AppDelegate.swift */,
 				3C5FBD981EB868B700E5F76A /* ViewController.swift */,
+				3C5FBDC71EB876BB00E5F76A /* Main */,
+				3C5FBDC51EB876B500E5F76A /* Note */,
+				3C5FBDC81EB8771500E5F76A /* Message */,
+				3C5FBDC61EB876B900E5F76A /* Peron */,
+				3C5FBDC91EB8774000E5F76A /* Public */,
+				3C5FBDCA1EB8774F00E5F76A /* Tools */,
 				3C5FBD9A1EB868B700E5F76A /* Main.storyboard */,
 				3C5FBD9D1EB868B700E5F76A /* Assets.xcassets */,
 				3C5FBD9F1EB868B700E5F76A /* LaunchScreen.storyboard */,
@@ -138,6 +150,59 @@
 				3C5FBDB81EB868B900E5F76A /* Info.plist */,
 			);
 			path = TravelSwiftUITests;
+			sourceTree = "<group>";
+		};
+		3C5FBDC51EB876B500E5F76A /* Note */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Note;
+			sourceTree = "<group>";
+		};
+		3C5FBDC61EB876B900E5F76A /* Peron */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Peron;
+			sourceTree = "<group>";
+		};
+		3C5FBDC71EB876BB00E5F76A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		3C5FBDC81EB8771500E5F76A /* Message */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Message;
+			sourceTree = "<group>";
+		};
+		3C5FBDC91EB8774000E5F76A /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				3C5FBDCB1EB878E600E5F76A /* define.swift */,
+				3C5FBDD01EB87EA500E5F76A /* UserInfo.swift */,
+			);
+			name = Public;
+			sourceTree = "<group>";
+		};
+		3C5FBDCA1EB8774F00E5F76A /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				3C5FBDCD1EB87B1500E5F76A /* Color */,
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
+		3C5FBDCD1EB87B1500E5F76A /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				3C5FBDCE1EB87B2800E5F76A /* color.swift */,
+			);
+			name = Color;
 			sourceTree = "<group>";
 		};
 		8EF8387AB4B1854C89E6B626 /* Pods */ = {
@@ -338,7 +403,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C5FBD991EB868B700E5F76A /* ViewController.swift in Sources */,
+				3C5FBDCF1EB87B2800E5F76A /* color.swift in Sources */,
 				3C5FBD971EB868B500E5F76A /* AppDelegate.swift in Sources */,
+				3C5FBDD11EB87EA500E5F76A /* UserInfo.swift in Sources */,
+				3C5FBDCC1EB878E600E5F76A /* define.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -591,6 +659,7 @@
 				3C5FBDBD1EB868B900E5F76A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3C5FBDBE1EB868B900E5F76A /* Build configuration list for PBXNativeTarget "TravelSwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -599,6 +668,7 @@
 				3C5FBDC01EB868B900E5F76A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3C5FBDC11EB868B900E5F76A /* Build configuration list for PBXNativeTarget "TravelSwiftUITests" */ = {
 			isa = XCConfigurationList;
@@ -607,6 +677,7 @@
 				3C5FBDC31EB868B900E5F76A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
