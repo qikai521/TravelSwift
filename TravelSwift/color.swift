@@ -8,7 +8,7 @@
 
 import UIKit
 //颜色相关
-public let kMainColor:UIColor = UIColor.init(colorLiteralRed: 150/255.0, green: 1, blue: 1, alpha: 1);
+public let kMainColor:UIColor = UIColor.init(colorLiteralRed: 36/255.0, green: 200/255.0, blue: 1, alpha: 1);
 
 public let kGrayColor:UIColor = UIColor.init(colorLiteralRed: 220/255.0, green: 220/255.0, blue: 220/255.0, alpha: 1)
 

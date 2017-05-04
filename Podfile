@@ -1,4 +1,4 @@
-platform :ios,'7.0'
+platform :ios,'9.0'
 target 'TravelSwift' do
     pod 'AFNetworking', '~> 3.1.0'
     pod 'SDWebImage', '~> 3.7'
@@ -8,5 +8,7 @@ target 'TravelSwift' do
     pod 'FMDB', '~> 2.6.2'
     pod 'MJRefresh', '~> 3.1.12'
     pod 'SBJson', '~> 5.0.0'
+    pod 'RAMAnimatedTabBarController', '~> 2.2.0'
+    use_frameworks!
 end
 

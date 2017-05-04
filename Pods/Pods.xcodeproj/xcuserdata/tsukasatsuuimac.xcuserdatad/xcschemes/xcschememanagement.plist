@@ -34,6 +34,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>RAMAnimatedTabBarController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SBJson.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -52,47 +57,52 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>04CF549EBEEE7BC87AEAE35397184D94</key>
+		<key>251BAD17812F7EBF6532EACF66F941C3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>10D20F56DBDE1E50E3FE7FAB81FF4764</key>
+		<key>2D8C088089513D6CC1C70025087159D4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2E7F94255B276043115371D6C01683D3</key>
+		<key>41FA54D12162DAD51D02FC58A2CD5034</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>586F2DFA9BDCC6675C2546793A69E5CC</key>
+		<key>49AA48F68FB292189AA10CE21AD56234</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8642CC820CE8C5B88C113D7F47AF4BC3</key>
+		<key>579963202D1814D027D57E95CD618703</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9DC8D9E02903E93BD0B2FEC9D846EA20</key>
+		<key>691855F2C994206BAD8C59F297DEDEEB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9E033EDB5EC0819481B0546434FA577B</key>
+		<key>CF671F7E57B92905F1CC91D036D6B4A7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B756BD3D44685F87646AAEE49058F2BE</key>
+		<key>D52144DE9D7255DE912490FF5A806573</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FF8069B4E59EEDDA22443A2481187878</key>
+		<key>E14A62900910444707A5504D25EC98DC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F1665F4D06A110AB6C4568FF3D509531</key>
 		<dict>
 			<key>primary</key>
 			<true/>
