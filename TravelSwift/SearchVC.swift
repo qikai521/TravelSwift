@@ -12,7 +12,7 @@ class SearchVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad();
-        self.view.backgroundColor = UIColor.orange;
+        self.view.backgroundColor = kMainColor;
         creatBackBtn();
         
     }

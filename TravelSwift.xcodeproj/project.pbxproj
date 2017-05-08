@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C4A17401EC04027000E6C56 /* SwiftTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4A173F1EC04027000E6C56 /* SwiftTimer.swift */; };
+		3C4A17421EC06F13000E6C56 /* MJRefresh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C4A17411EC06F13000E6C56 /* MJRefresh.framework */; };
+		3C4A17441EC06F27000E6C56 /* YYModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C4A17431EC06F27000E6C56 /* YYModel.framework */; };
+		3C4A17461EC06F30000E6C56 /* FMDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C4A17451EC06F30000E6C56 /* FMDB.framework */; };
+		3C4A17481EC06F9A000E6C56 /* PublicMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4A17471EC06F9A000E6C56 /* PublicMethod.swift */; };
 		3C5FBD971EB868B500E5F76A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5FBD961EB868B500E5F76A /* AppDelegate.swift */; };
 		3C5FBD9C1EB868B700E5F76A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C5FBD9A1EB868B700E5F76A /* Main.storyboard */; };
 		3C5FBD9E1EB868B700E5F76A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C5FBD9D1EB868B700E5F76A /* Assets.xcassets */; };
@@ -25,6 +30,9 @@
 		3CE073CB1EB96E6500F1A3FE /* BaseNavagationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE073CA1EB96E6500F1A3FE /* BaseNavagationController.swift */; };
 		3CE073CE1EB9C2FE00F1A3FE /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE073CD1EB9C2FE00F1A3FE /* SearchVC.swift */; };
 		3CE073D01EB9C39B00F1A3FE /* SearchAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE073CF1EB9C39B00F1A3FE /* SearchAnimation.swift */; };
+		3CFB00821EBAC66800C6F5DB /* MainBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFB00811EBAC66800C6F5DB /* MainBanner.swift */; };
+		3CFB00841EBAD61A00C6F5DB /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CFB00831EBAD61A00C6F5DB /* ImageIO.framework */; };
+		3CFB00861EBAD62A00C6F5DB /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CFB00851EBAD62A00C6F5DB /* SDWebImage.framework */; };
 		CE8E9316EC1862FD8AE7A87A /* Pods_TravelSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD0A0FD0729C70F47E51C17 /* Pods_TravelSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +55,11 @@
 
 /* Begin PBXFileReference section */
 		1AD0A0FD0729C70F47E51C17 /* Pods_TravelSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravelSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C4A173F1EC04027000E6C56 /* SwiftTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftTimer.swift; sourceTree = "<group>"; };
+		3C4A17411EC06F13000E6C56 /* MJRefresh.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MJRefresh.framework; path = "../../Library/Developer/Xcode/DerivedData/TravelSwift-dshfoagchapmffbhzzzayydecddk/Build/Products/Debug-iphonesimulator/MJRefresh/MJRefresh.framework"; sourceTree = "<group>"; };
+		3C4A17431EC06F27000E6C56 /* YYModel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YYModel.framework; path = "../../Library/Developer/Xcode/DerivedData/TravelSwift-dshfoagchapmffbhzzzayydecddk/Build/Products/Debug-iphonesimulator/YYModel/YYModel.framework"; sourceTree = "<group>"; };
+		3C4A17451EC06F30000E6C56 /* FMDB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FMDB.framework; path = "../../Library/Developer/Xcode/DerivedData/TravelSwift-dshfoagchapmffbhzzzayydecddk/Build/Products/Debug-iphonesimulator/FMDB/FMDB.framework"; sourceTree = "<group>"; };
+		3C4A17471EC06F9A000E6C56 /* PublicMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicMethod.swift; sourceTree = "<group>"; };
 		3C5FBD931EB868B400E5F76A /* TravelSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C5FBD961EB868B500E5F76A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3C5FBD9B1EB868B700E5F76A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -71,6 +84,10 @@
 		3CE073CA1EB96E6500F1A3FE /* BaseNavagationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavagationController.swift; sourceTree = "<group>"; };
 		3CE073CD1EB9C2FE00F1A3FE /* SearchVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		3CE073CF1EB9C39B00F1A3FE /* SearchAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchAnimation.swift; sourceTree = "<group>"; };
+		3CFB00811EBAC66800C6F5DB /* MainBanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainBanner.swift; sourceTree = "<group>"; };
+		3CFB00831EBAD61A00C6F5DB /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		3CFB00851EBAD62A00C6F5DB /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = "../../Library/Developer/Xcode/DerivedData/TravelSwift-dshfoagchapmffbhzzzayydecddk/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework"; sourceTree = "<group>"; };
+		3CFB00881EBAD71700C6F5DB /* TravelSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TravelSwift-Bridging-Header.h"; sourceTree = "<group>"; };
 		65075653C0EBEE637CB2B1DE /* Pods-TravelSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TravelSwift/Pods-TravelSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		BFB400CC22155DFFCF66ABD6 /* Pods-TravelSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-TravelSwift/Pods-TravelSwift.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,6 +97,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C4A17461EC06F30000E6C56 /* FMDB.framework in Frameworks */,
+				3C4A17441EC06F27000E6C56 /* YYModel.framework in Frameworks */,
+				3C4A17421EC06F13000E6C56 /* MJRefresh.framework in Frameworks */,
+				3CFB00861EBAD62A00C6F5DB /* SDWebImage.framework in Frameworks */,
+				3CFB00841EBAD61A00C6F5DB /* ImageIO.framework in Frameworks */,
 				CE8E9316EC1862FD8AE7A87A /* Pods_TravelSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -104,6 +126,11 @@
 		034CFC8C8DDA60F6F3123999 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3C4A17451EC06F30000E6C56 /* FMDB.framework */,
+				3C4A17431EC06F27000E6C56 /* YYModel.framework */,
+				3C4A17411EC06F13000E6C56 /* MJRefresh.framework */,
+				3CFB00851EBAD62A00C6F5DB /* SDWebImage.framework */,
+				3CFB00831EBAD61A00C6F5DB /* ImageIO.framework */,
 				1AD0A0FD0729C70F47E51C17 /* Pods_TravelSwift.framework */,
 			);
 			name = Frameworks;
@@ -135,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				3C5FBD961EB868B500E5F76A /* AppDelegate.swift */,
+				3CFB00871EBAD6C000C6F5DB /* 桥接 */,
 				3CE073B01EB9695400F1A3FE /* RootVC */,
 				3C5FBDC71EB876BB00E5F76A /* Main */,
 				3C5FBDC51EB876B500E5F76A /* Note */,
@@ -248,6 +276,7 @@
 		3CE073AE1EB9692F00F1A3FE /* PublicMethod */ = {
 			isa = PBXGroup;
 			children = (
+				3C4A17471EC06F9A000E6C56 /* PublicMethod.swift */,
 			);
 			name = PublicMethod;
 			sourceTree = "<group>";
@@ -271,6 +300,7 @@
 		3CE073B41EB96A7E00F1A3FE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3CFB00801EBAC64500C6F5DB /* Banner */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -357,6 +387,23 @@
 			name = SearchVC;
 			sourceTree = "<group>";
 		};
+		3CFB00801EBAC64500C6F5DB /* Banner */ = {
+			isa = PBXGroup;
+			children = (
+				3CFB00811EBAC66800C6F5DB /* MainBanner.swift */,
+				3C4A173F1EC04027000E6C56 /* SwiftTimer.swift */,
+			);
+			name = Banner;
+			sourceTree = "<group>";
+		};
+		3CFB00871EBAD6C000C6F5DB /* 桥接 */ = {
+			isa = PBXGroup;
+			children = (
+				3CFB00881EBAD71700C6F5DB /* TravelSwift-Bridging-Header.h */,
+			);
+			name = "桥接";
+			sourceTree = "<group>";
+		};
 		8EF8387AB4B1854C89E6B626 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -438,6 +485,7 @@
 					3C5FBD921EB868B400E5F76A = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = L833E7SWLW;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					3C5FBDA61EB868B700E5F76A = {
@@ -555,6 +603,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CE073CE1EB9C2FE00F1A3FE /* SearchVC.swift in Sources */,
+				3C4A17401EC04027000E6C56 /* SwiftTimer.swift in Sources */,
 				3CE073C91EB96C0500F1A3FE /* MineVC.swift in Sources */,
 				3CE073B21EB9697600F1A3FE /* RootViewController.swift in Sources */,
 				3C5FBDCF1EB87B2800E5F76A /* color.swift in Sources */,
@@ -564,7 +613,9 @@
 				3C5FBDD11EB87EA500E5F76A /* UserInfo.swift in Sources */,
 				3CE073C31EB96BDA00F1A3FE /* MainVC.swift in Sources */,
 				3CE073C11EB96B6800F1A3FE /* BaseViewController.swift in Sources */,
+				3CFB00821EBAC66800C6F5DB /* MainBanner.swift in Sources */,
 				3CE073C51EB96BEE00F1A3FE /* NoteVC.swift in Sources */,
+				3C4A17481EC06F9A000E6C56 /* PublicMethod.swift in Sources */,
 				3CE073CB1EB96E6500F1A3FE /* BaseNavagationController.swift in Sources */,
 				3C5FBDCC1EB878E600E5F76A /* define.swift in Sources */,
 			);
@@ -664,6 +715,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-Objc";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -707,6 +759,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-Objc";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -719,11 +772,14 @@
 			baseConfigurationReference = 65075653C0EBEE637CB2B1DE /* Pods-TravelSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = L833E7SWLW;
 				INFOPLIST_FILE = TravelSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.stone.TravelSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TravelSwift/TravelSwift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -733,11 +789,13 @@
 			baseConfigurationReference = BFB400CC22155DFFCF66ABD6 /* Pods-TravelSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = L833E7SWLW;
 				INFOPLIST_FILE = TravelSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.stone.TravelSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TravelSwift/TravelSwift-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

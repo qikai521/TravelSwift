@@ -21,7 +21,7 @@ class PresentAnimation: NSObject,UIViewControllerAnimatedTransitioning,CAAnimati
         
         let radius = sqrt(pow(containerView.frame.size.width, 2) + pow(containerView.frame.size.height, 2))/2.0;
         
-        let endCycle = UIBezierPath(arcCenter: containerView.center, radius: radius, startAngle: 0, endAngle: CGFloat(M_PI * 2.0), clockwise: true);
+        let endCycle = UIBezierPath(arcCenter: containerView.center, radius: radius, startAngle: 0, endAngle: CGFloat(M_PI * 2), clockwise: true);
         let startCycle = UIBezierPath(rect: CGRect(x: containerView.center.x, y: containerView.center.y, width: 0, height: 0));
         
         //创建CAShapeLayer进行遮盖
