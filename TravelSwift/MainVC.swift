@@ -13,11 +13,14 @@ class MainVC: BaseViewController,UINavigationControllerDelegate,UITableViewDataS
     
     var _mainTB:UITableView = {
         let tb = UITableView(frame:CGRect(x: 0, y: 164, width: kScreenWidth, height: kScreenHeight - 164), style: UITableViewStyle.grouped);
+        tb.tag = 1002;
+        tb.isScrollEnabled = false;
         return tb;
     }();
     
     var _mainScrollView:UIScrollView = {
-        let scrollView = UIScrollView(frame: CGRect(x: 0, y: 64.0, width: kScreenWidth, height: kScreenHeight - 64.0 - 44.0));
+        let scrollView = UIScrollView(frame: CGRect(x: 0, y: 0, width: kScreenWidth, height: kScreenHeight - 44.0));
+        scrollView.tag = 1001;
         return scrollView;
     }();
     
@@ -33,13 +36,6 @@ class MainVC: BaseViewController,UINavigationControllerDelegate,UITableViewDataS
         self.automaticallyAdjustsScrollViewInsets = false;
         self.title = "UOU";
         self.view.backgroundColor = kGrayColor;
-        //创建naviBar
-        let navBar = MainNaviBar(frame: CGRect(x: 0, y: 0, width: kScreenWidth, height: 64));
-        navBar.backgroundColor = kMainColor;
-        navBar.addBlock = {
-            print("点击了+");
-        }
-        self.view.addSubview(navBar);
         creatMainView();
         //创建tableView
         creatMainTB();
@@ -54,9 +50,25 @@ class MainVC: BaseViewController,UINavigationControllerDelegate,UITableViewDataS
     }
     //创建主tableView
     func creatMainTB()  {
+        _mainScrollView.delegate = self;
+        _mainScrollView.backgroundColor  = UIColor.red;
+        _mainScrollView.contentSize = CGSize(width: kScreenWidth, height: 1000)
+        _mainScrollView.bounces = false;
+        self.view.addSubview(_mainScrollView);
+    
         _mainTB.delegate = self;
+        _mainTB.backgroundColor = UIColor.orange;
         _mainTB.dataSource = self;
-        self.view.addSubview(_mainTB);
+        _mainScrollView.addSubview(_mainTB);
+        
+        //创建naviBar
+        let navBar = MainNaviBar(frame: CGRect(x: 0, y: 0, width: kScreenWidth, height: 164));
+        navBar.isUserInteractionEnabled = true;
+        navBar.backgroundColor = kMainColor;
+        navBar.addBlock = {
+            print("点击了+");
+        }
+        self.view.addSubview(navBar);
     }
     
     //进入定位界面
@@ -99,7 +111,16 @@ class MainVC: BaseViewController,UINavigationControllerDelegate,UITableViewDataS
         }
         return cell!;
     }
+    
+    //MARK: -  scrollDelete
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if scrollView == _mainScrollView {
+            //说明是mainScrollView
+            _mainTB.setContentOffset(_mainScrollView.contentOffset, animated: false);
+        }
+    }
 }
+
 
 typealias ClickAddBtnAction = ()->Void;
 class MainNaviBar: UIView ,UISearchBarDelegate{
@@ -116,6 +137,8 @@ class MainNaviBar: UIView ,UISearchBarDelegate{
         self.addSubview(_backView!)
         addFrontSubView()
         addBakcSubView()
+        
+        addBottomBtn()
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -142,7 +165,7 @@ class MainNaviBar: UIView ,UISearchBarDelegate{
     
     func addBakcSubView(){
         let searchBtn = UIButton(type: .custom);
-        searchBtn.frame = CGRect(x: 20, y: 20, width: 20, height: 20);
+        searchBtn.frame = CGRect(x: 20, y: 32, width: 20, height: 20);
         searchBtn.setImage(#imageLiteral(resourceName: "item"), for: .normal);
         searchBtn.addTarget(self, action: #selector(UISearchBarDelegate.searchBarShouldBeginEditing(_:)), for: .touchUpInside)
         _backView?.addSubview(searchBtn);
@@ -159,10 +182,46 @@ class MainNaviBar: UIView ,UISearchBarDelegate{
     func searchAction(){
         print("打开search")
     }
-    
     func searchBarShouldBeginEditing(_ searchBar: UISearchBar) -> Bool {
         print("打开search")
         return true;
+    }
+    
+    let itemImageArr = [#imageLiteral(resourceName: "item"),#imageLiteral(resourceName: "item"),#imageLiteral(resourceName: "item"),#imageLiteral(resourceName: "item")]
+    let itemNames = ["扫一扫","找导游","搭个伙","看景点"]
+    func addBottomBtn()  {
+        for index in 0...3 {
+            let itemWidth = (kScreenWidth -  160.0)/4.0
+            let itemHeight = 80.0
+            let left = 20.0 + CGFloat(index) * (itemWidth + 40.0)
+            let btn = UIButton(type: .custom)
+            btn.frame = CGRect(x: left, y: 74.0, width: itemWidth, height: CGFloat(itemHeight))
+            btn.setImage(itemImageArr[index], for: .normal)
+            btn.setTitle(itemNames[index], for: .normal)
+            btn.titleEdgeInsets = UIEdgeInsets(top: itemWidth + 5, left: -itemWidth, bottom: 0, right: 0)
+            btn.tag = 200+index;
+            btn.addTarget(self, action: #selector(MainNaviBar.itemBtnAction(btn:)), for: .touchUpInside)
+            self.addSubview(btn)
+        }
+    }
+    
+    func itemBtnAction(btn:UIButton!) {
+        switch btn.tag {
+        case 200:
+            print("扫一扫")
+            break;
+        case 201:
+            print("找导游")
+            break;
+        case 202:
+            print("搭个伙")
+            break;
+        case 203:
+            print("看景点")
+            break;
+        default:
+            print("其他")
+        }
     }
     
     func exChangeAplahWhenScroll(scrollView:UIScrollView){
